@@ -18,5 +18,84 @@ a {
 
 .ant-layout-footer {
   border-top: 1px solid #E7E7E7;
+  padding: 0;
+}
+
+.footer {
   padding: 10px 0;
+}
+
+.dark {
+  background-color: black;
+  color: white !important;
+}
+.dark .container {
+  color: white !important;
+}
+
+.dark-bg {
+  background-color: rgb(29, 29, 29) !important;
+  border: 1px solid grey !important;
+  color: white !important;
+  /* border-radius: 5px !important; */
+}
+
+.dark-tb-bg {
+  background-color: rgb(29, 29, 29) !important;
+  /* border: 1px solid grey !important; */
+  color: white !important;
+  /* border-radius: 5px !important; */
+}
+
+.dark-tb-bg .table-name .table-name-details .table-title {
+  color: white;
+}
+
+/* .dark-bg > tr > th{
+  background-color: rgb(29, 29, 29) !important;
+  color: white;
+} */
+
+
+
+
+.dark-bg div {
+  color: white !important;
+}
+
+.dark-bg span {
+  color: white !important;
+}
+
+.dark-bg p {
+  color: white !important;
+}
+
+.dark-footer-bg {
+  background-color: rgb(29, 29, 29) !important;
+  color: white !important;
+}
+
+.dark-footer-bg > div {
+  color: white !important;
+}
+
+.dark-footer-bg .footer-items > div {
+  color: white !important;
+}
+
+.dark-footer-bg .footer-items .footer-menu-items > div {
+  color: white !important;
+}
+
+.dark-news-bg > div {
+  color: white !important;
+}
+
+.dark > div {
+  color: white !important;
+}
+
+.dark > span {
+  color: white !important;
 }

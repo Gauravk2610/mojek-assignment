@@ -1,5 +1,6 @@
 import { DownOutlined } from '@ant-design/icons';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './BottomFooter.css'
 
 const footerItems = [
@@ -18,8 +19,11 @@ const footerItems = [
 ]
 
 function BottomFooter() {
+
+    const theme = useSelector(state => state.theme.mode)
+
     return (
-        <div className='footer'>
+        <div className={`footer ${theme === 'dark' && 'dark-footer-bg'}`}>
             <div className='footer-items'>
                 <div className="more-mojek">
                     More Mojek

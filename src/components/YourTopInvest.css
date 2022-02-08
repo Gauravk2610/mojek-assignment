@@ -13,7 +13,7 @@
 }
 
 .ant-table-cell {
-    background-color: white !important;
+    /* background-color: white !important; */
 }
 
 .ant-table-row:last-child .ant-table-cell {

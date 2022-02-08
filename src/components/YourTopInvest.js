@@ -52,13 +52,16 @@ const Graph = ({data}) => {
 function YourTopInvest() {
 
     const investments = useSelector((state) => state.account.investments)
+    const theme = useSelector((state) => state.theme.mode)
+
     return (
-        <div className='top-invest'>
+        <div className={`top-invest`}>
             <div className="top-invest-title">Your top performing investments</div>
             <Row gutter={[32, 16]}>
                 <Col lg={{span: 17}}>
-                    <Table dataSource={investments} pagination={false} >
+                    <Table className={` ${theme === 'dark' && 'dark-tb-bg'} `}  dataSource={investments} pagination={false} >
                         <Column 
+                            className={`${theme === 'dark' && 'dark-tb-bg'}`}
                             title="Name" 
                             dataIndex="image" 
                             key="image"
@@ -79,10 +82,10 @@ function YourTopInvest() {
                                     </div>                                    
                                 )
                             } 
-                        />
-                        <Column title="Qty" dataIndex="qty" key="qty" />
-                        <Column title="Ltp" dataIndex="ltp" key="ltp" />
-                        <Column title="Cur. Val" dataIndex="currentValue" key="currentValue"
+                        /> className={`${theme === 'dark' && 'dark-tb-bg'}`}
+                        <Column className={`${theme === 'dark' && 'dark-tb-bg'}`} title="Qty" dataIndex="qty" key="qty" />
+                        <Column className={`${theme === 'dark' && 'dark-tb-bg'}`} title="Ltp" dataIndex="ltp" key="ltp" />
+                        <Column className={`${theme === 'dark' && 'dark-tb-bg'}`} title="Cur. Val" dataIndex="currentValue" key="currentValue"
                             render={currentValue => (
                                 <>
                                 <div className='cur-val'>{currentValue}</div> 
@@ -90,7 +93,7 @@ function YourTopInvest() {
                                 </>
                             )}    
                         />
-                        <Column title="P&L" dataIndex="profitAndLoss" key="profitAndLoss"
+                        <Column className={`${theme === 'dark' && 'dark-tb-bg'}`} title="P&L" dataIndex="profitAndLoss" key="profitAndLoss"
                             render={pl => (
                                 <>
                                 <div className='cur-val'>{pl}</div> 
@@ -115,13 +118,13 @@ function YourTopInvest() {
                             )}    
                         /> */}
                     </Table>
-                    <div className='tb-end'>
+                    <div className={`tb-end ${theme === 'dark' && 'dark-tb-bg'}`}>
                         <div className='drop-down'>Last7 days <CaretDownOutlined /> </div>
                         <a className='all-investments'>All Investments <ArrowRightOutlined /> </a>
                     </div>
                 </Col>
                 <Col lg={{span: 7}}>
-                    <div className="more-insights">
+                    <div className={`more-insights ${theme === 'dark' && 'dark-bg'}`}>
                         <img src="/assests/icons/moreinfo.png" alt="" className="more-info" />
                         <div className="more-insights-title">
                             <img src="/assests/icons/dot.png" alt="" />

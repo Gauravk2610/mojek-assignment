@@ -5,14 +5,16 @@ import React, { useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import './News.css'
 
-const NewsCard = ( {title, img, date} ) => (
-    <div className='news-card'>
+const NewsCard = ( {title, img, date} ) => {
+    const theme = useSelector(state => state.theme.mode)
+    return (
+    <div className={`news-card ${theme === 'dark' && 'dark-news-bg'}`}>
         <img src={img} alt="" />
         <div className="news-card-title">{title}</div>
         <div className="news-card-date">{moment(date).format("MMM Do YY") }</div>
     </div>
-)
-
+    )
+}
 function News() {
 
     const slider = useRef(null)

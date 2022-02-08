@@ -10,10 +10,11 @@ import YourTopInvest from '../components/YourTopInvest';
 import PortfolioBrkDwn from '../components/PortfolioBrkDwn';
 import Advertise from '../components/Advertise';
 import News from '../components/News';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getInvestments, getPortfolio } from '../features/account/accountSlice';
 import { instance } from '../instance';
 import { getNews } from '../features/news/newsSlice';
+import { setTheme } from '../features/dark/darkSlice';
 
 const { TabPane } = Tabs;
 const { Title } = Typography;
@@ -153,6 +154,8 @@ const data = [
 function Home() {
 
   const dispatch = useDispatch()
+  const theme = useSelector((state) => state.theme.mode)
+
 
   const loadInvestments = async() => {
     const data = await instance.get('/account/investments')
@@ -180,11 +183,12 @@ function Home() {
             {/* Intro */}
             <div className="intro">
                 <div>
-                    <div className='intro-welcome'>☀️ Good Morning, Harpreet</div>
+                    <div className={`intro-welcome ${theme === 'dark' && 'dark'}`}>☀️ Good Morning, Harpreet</div>
                     <div className='intro-msg'>Welcome back! Your portfolio was last updated on <span className='date'>14th September, 12:56pm</span><img className='refresh' src="/assests/icons/refresh.png" alt="" /></div>
                 </div>
-                <div className='right-icons'>
-                    <div className='insights'>
+                <div className={`right-icons ${theme === 'dark' && 'dark'}`}>
+                  <img onClick={() => dispatch(setTheme())} className='dark-icon' src="/assests/icons/dark.png" alt="" />
+                    <div className={`insights ${theme === 'dark' && 'dark'}`}>
                         <div className="circle" />
                         <div className="badge-count">
                             <span>2</span>
@@ -227,7 +231,7 @@ function Home() {
                       </div>
                   </Col>
                   <Col lg={{span: 7}}>
-                      <div className='pie-chart'>
+                      <div className={`pie-chart ${theme === 'dark' && 'dark-bg'} `}>
                           <div className="pie-title">
                               <div className='active'>Portfolio</div>
                               <div>Markets</div>

@@ -87,6 +87,12 @@
     color: #293C2A;
 }
 
+.right-icons .dark-icon {
+    margin: 0 16px;
+    width: 20px;
+    cursor: pointer;
+}
+
 .row-grid {
     display: grid;
     grid-column-gap: 50px;

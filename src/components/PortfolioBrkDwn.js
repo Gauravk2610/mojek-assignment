@@ -11,6 +11,7 @@ function PortfolioBrkDwn() {
     const [count, setCount] = useState(0)
 
     const {assets} = useSelector((state) => state.account.portfolio)
+    const theme = useSelector((state) => state.theme.mode)
 
     const settings = {
         dots: true,
@@ -23,7 +24,7 @@ function PortfolioBrkDwn() {
     };
 
     return (
-        <div className='yur-portfolio-brk'>
+        <div className={`yur-portfolio-brk `}>
             <div className="yur-portfolio-brk-title">
                 <div>Your portfolio breakdown</div>
                 <div>

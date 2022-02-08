@@ -1,11 +1,14 @@
 import { Progress } from 'antd';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './PortfolioBrkCard.css'
 
 function PortfolioBrkCard({assets: {_id, total, assets}}) {
-    console.log(assets)
+
+    const theme = useSelector(state => state.theme.mode)
+    
     return (
-        <div className='portfolio-card'>
+        <div className={`portfolio-card ${theme === 'dark' && 'dark-bg'} `}>
             <div className="portfolio-card-header">
                 <img src="/assests/icons/bank.png" alt="" />
                 <div className='portfolio-card-title'>
