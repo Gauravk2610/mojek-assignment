@@ -1,0 +1,134 @@
+.menu {
+    border: 1px solid #E7E7E7;
+    background: #FFFFFF;
+}
+.menu  .menu-wrapper {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 140px;
+    object-fit: contain;
+}
+
+.divider {
+    margin: 0 16px;
+    height: 26px;
+    width: 1px;
+    background-color: #D6D6D6;   
+}
+
+.menu-items {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu-items li {
+    position: relative;
+    margin: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li .active {
+    border-bottom: 3px solid #11C770;
+    font-weight: 600;
+}
+
+.menu-items .search {
+    height: fit-content;
+    background: #F7F7F7;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 24px;
+}
+
+.menu-items .search .anticon-search {
+    color: #878787;
+}
+
+.menu-items .search input {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    margin: 0 16px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.menu-items .anticon-bell {
+    font-size: 22px;
+}
+
+.menu-items .badge {
+    position: relative;
+    margin: 0 12px;
+}
+
+.menu-items .badge .dark {
+    width: 20px;
+}
+
+.menu-items .badge .badge-count {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    background-color: #11C770;
+    color: white;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 60px;
+    border: 2px solid white;
+}
+
+.menu-items .profile-wrap {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+}
+.menu-items .profile {
+    height: fit-content;
+    /* height: 0px; */
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #11c76f25;
+    border-radius: 60px;
+}
+
+.menu-items .profile span {
+    color: #11C770;
+}
+
+.menu-items .profile-wrap .anticon-down {
+    margin: 0 10px;
+}
+
+@media(max-width: 1200px) {
+    input {
+        display: none;
+    }
+}

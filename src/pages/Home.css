@@ -1,0 +1,232 @@
+.container {
+    margin: 0 120px;
+}
+
+.intro {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro .intro-welcome {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #293C2A;
+    line-height: 30px;
+}
+
+.intro .intro-msg {
+    font-size: 13px;
+    /* color: #878787; */
+    line-height: 18px;
+    margin: 5px 0;
+}
+
+.intro .intro-msg .date {
+    color: #11C770;
+}
+
+.refresh {
+    margin: 0 6px;
+    width: 11px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.intro .right-icons {
+    display: flex;
+    align-items: center;
+}
+.intro .right-icons .insights {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #595959;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+
+.intro .right-icons .insights .circle {
+    /* position: absolute; */
+    width: 6px;
+    height: 6px;
+    border-radius: 60px;
+    /* inset: 0; */
+
+    background-color: #11C770;
+}
+.badge-count {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: #11C770;
+    color: white;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 60px;
+    border: 2px solid white;
+}
+
+.badge-count span {
+    color: white !important;
+    font-size: 10px !important;
+}
+
+.right-icons span {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0 10px;
+    color: #293C2A;
+}
+
+.row-grid {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 5fr 2fr;
+}
+
+.chart-graph {
+    position: relative;
+}
+
+.platforms {
+    position: absolute;
+    top: 0;
+    right: -90px;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.platforms img {
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.graph {
+    padding: 24px 32px;
+    background: #223323;
+    border-radius: 5px;
+}
+
+.graph .graph-btm {
+    margin: 32px 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.733);
+    
+}
+
+.graph-text {
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.graph-count {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.graph-count sub {
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.graph-header {
+    display: flex;
+}
+
+.graph-divider {
+    margin: 0 24px;
+    height: initial;
+    width: 1.5px;
+    background-color: #ffffff;
+}
+
+.graph-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.graph-data-value {
+    display: flex;
+    align-items: center;
+}
+
+.graph-title {
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    width: 60px;
+}
+
+.graph-no {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.pie-chart {
+    border: 1px solid #E7E7E7;
+    border-radius: 5px; 
+    height: 100%;
+}
+
+.pie-title {
+    height: 80px;
+    display: flex;
+    align-items: center;  
+    border-bottom: 1px solid #E7E7E7; 
+}
+
+.pie-title div {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #E7E7E7;
+}
+
+.pie-title .active {
+    border-bottom: 3px solid #11C770;
+    font-weight: 600;
+}
+
+.pie {
+    width: 286px;
+    height: 286px;
+    margin: 24px auto;
+}
+
+.pie-data {
+    margin: 16px 24px;
+    display: flex;
+}
+
+.pie-data-title {
+    width: 40%;
+    line-height: 18px;
+    font-size: 16px;
+    color: #293C2A;
+}

@@ -1,0 +1,133 @@
+.top-invest {
+    margin: 30px 0;
+}
+
+.top-invest-title {
+    margin-bottom: 30px;
+}
+
+.ant-table-content {
+    border: 1px solid #E7E7E7;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+.ant-table-cell {
+    background-color: white !important;
+}
+
+.ant-table-row:last-child .ant-table-cell {
+    border-bottom: none !important;
+}
+
+.table-name {
+    display: flex;
+    align-items: center;
+}
+
+.table-name .profile {
+    margin-right: 10px;
+}
+
+.table-name .profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.table-name-details .table-title {
+    line-height: 18px;
+    color: #293C2A;
+}
+
+.table-name-details .table-cmpy {
+    font-size: 11px;
+    line-height: 15px;
+    color: #B0B0B0;  
+}
+
+.table-name .table-graph {
+    margin-left: auto;
+    /* width: 40px; */
+}
+
+.cur-val-up {
+    font-size: 12px;
+    line-height: 16px;
+    color: #11C770;
+}
+
+.tb-end {
+    padding: 16px;
+    border: 1px solid #E7E7E7;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tb-end .all-investments {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #11C770;
+}
+
+.tb-end .drop-down {
+    cursor: pointer;
+}
+
+.more-insights {
+    position: relative;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px; 
+    height: 100%;
+    padding-top: 31px;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-insights .more-insights-title {
+    padding: 0px 23px;
+}
+
+.more-insights .more-insights-title span {
+    margin-left: 6px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #293C2A;
+}
+
+.more-insights .more-info {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.more-insights p {
+    padding: 0px 23px;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 22px;
+    color: #293C2A;
+}
+
+.more-insights-btm {
+    margin-top: auto;
+    padding: 12px 23px;
+    font-weight: 600;
+    font-size: 14px;
+    border-top: 1px solid #E7E7E7;
+    line-height: 16px;
+    color: #11C770;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.more-insights-btm div {
+    margin-left: auto;
+}

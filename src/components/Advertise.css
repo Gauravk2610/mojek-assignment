@@ -1,0 +1,43 @@
+.advertise {
+    margin: 16px 0;
+}
+
+.advertise-card {
+    padding: 21px 30px;
+    background: #293C2A;
+    border-radius: 5px;
+    position: relative;
+}
+
+.advertise-card-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.advertise-card-desc {
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 6px 0;
+    max-width: 300px;
+}
+
+.advertise-card-learn-more {
+    width: 123px;
+    height: 37px;
+    background: #11C770;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin: 12px 0;
+}
+
+.side-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}

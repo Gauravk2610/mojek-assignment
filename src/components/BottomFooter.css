@@ -1,0 +1,40 @@
+.footer {
+}
+
+.footer-items {
+    display: flex;
+    margin: 0 121px;
+    align-items: center;
+}
+
+.footer-items .more-mojek {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 26px;
+    color: #293C2A;
+    cursor: pointer;
+}
+
+.more-mojek .anticon-down {
+    margin-left: 6px;
+}
+
+.divider {
+    margin: 0 16px;
+    height: 20px;
+    width: 1.5px;
+    background-color: #223323;
+}
+
+.footer-menu-items {
+    display: flex;
+}
+
+.footer-item {
+    margin: 0 16px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 26px;
+    color: #293C2A;
+    cursor: pointer;
+}
